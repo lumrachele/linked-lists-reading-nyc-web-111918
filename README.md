@@ -1,11 +1,15 @@
 ## Linked Lists
 
 ### Problem solver 
-Linked lists solves some of the problems we ran into when talking about arrays.  Remember that with arrays, having a contiguous list of elements, and each element stored at a specific and predictable place in memory made retrieval very predictable.  But this same attribute caused us problems when we wanted to remove or add elements near the beginning of the array.  For example, if we want to remove the second element in the array, then to we need to move the memory address of every following element in our array.  That gets costly.  With a linked list we no longer run into this problem.
+Linked lists solves some of the problems we ran into when talking about arrays.  Remember that with arrays, having a contiguous list of elements, and each element stored at a specific place in memory made retrieval very predictable.  But this same attribute caused us problems when we wanted to remove or add elements near the beginning of the array.  For example, if we want to remove the second element in the array, then to we need to move the memory address of every following element in our array.  That gets costly.  With a linked list we no longer run into this problem.
 
-  * Linked Lists are a data structure that not only store the element but also store a pointer to another address in memory.  
+  * Linked Lists are a data structure that not only store the data associated with each element but also store a pointer to another address in memory where another element exists.  We call these elements 'nodes'.  
   * Linked lists are composed of nodes containing their value, and a pointer to the next value.
-  * One node can point to a following node which can be anywhere in memory, so long as the previous node knows the address.
+  * Because each node points to a following node, each node can be anywhere in memory, so long as the previous node knows the address.
+
+
+![](https://media.licdn.com/mpr/mpr/p/1/005/087/262/2a26840.jpg)
+> Hierarchy at an organization can be represented as a linked list, where each individual has one subordinate that he can point to.
 
 Let's show a visual representation of a node.
 
@@ -36,7 +40,7 @@ First Node
 
 So we can store our linked list by having a pointer to our first node, and because that first node tells us where to find the second node, and the second tells us where to find the third, and so on, we can therefore find all of the other nodes in a linked list.  
 
-![](http://www.queen-of-theme-party-games.com/images/pirate-treasure-hunt-game-printable-2.png)
+
 
 We call that first node our head.  And now we can write:
 
@@ -68,10 +72,8 @@ We just need to hold the elements in a collection.  We'll see why in a moment.
 Ok, given the above representation.  Let's write our own `next` function.  The `next` function should return the next node in a linked list.  It will have the following function signature `next(node)` and will return the next node.  
 
 ![](http://www.purplecar.net/wordpress/wp-content/uploads/2015/03/FerrisMuseum1.jpg)
-
-> Note: For the following problem, we can imagine that each node is a child in a kindergarten classroom.  To make sure no child is lost on a class trip, she asks each child to have one buddy.  Then the teacher just remember's one child and asks that first child to point to his buddy, who points to their buddy and so on.
   
-So now we need a function that can take in a small child as an argument and return that child's buddy.  
+So now we need a function that can take in a node as an argument and return the next node.  
 
 ```javascript
 let firstNode = ['cameron', 123]
