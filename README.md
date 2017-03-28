@@ -8,7 +8,7 @@ Linked lists solves some of the problems we ran into when talking about arrays. 
   * Because each node points to a following node, each node can be anywhere in memory, so long as the previous node knows the address.
 
 
-![](https://media.licdn.com/mpr/mpr/p/1/005/087/262/2a26840.jpg)
+![](https://s3-us-west-2.amazonaws.com/curriculum-content/web-development/algorithms/passing-buck.jpg)
 > Hierarchy at an organization can be represented as a linked list, where each individual has one subordinate that he can point to.
 
 Let's show a visual representation of a node.
@@ -71,7 +71,7 @@ We just need to hold the elements in a collection.  We'll see why in a moment.
 
 Ok, given the above representation.  Let's write our own `next` function.  The `next` function should return the next node in a linked list.  It will have the following function signature `next(node)` and will return the next node.  
 
-![](http://www.purplecar.net/wordpress/wp-content/uploads/2015/03/FerrisMuseum1.jpg)
+![](https://s3-us-west-2.amazonaws.com/curriculum-content/web-development/algorithms/FerrisMuseum.jpg)
   
 So now we need a function that can take in a node as an argument and return the next node.  
 
