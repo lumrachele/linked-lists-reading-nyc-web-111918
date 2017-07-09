@@ -188,7 +188,7 @@ Head
     765-----
 ```
 
-We'll let you code this procedure in the next exercise.  The important thing for now is to notice that the cost of this was relatively cheap.  The only thing that can get costly is the number of times we need to call `next` to access the index we are adding our node to.  So the cost of adding or removing elements is big O of the index we are adding to.  When adding elements towards the beginning of the linked list this will be significantly less than adding elements to the beginning of a linked list, which is big O of n.
+We'll let you code this procedure in the next exercise.  The important thing for now is to notice that the cost of this was relatively cheap.  The only thing that can get costly is the number of times we need to call `next` to access the index we are adding our node to.  So the cost of adding or removing elements is big O of the index we are adding to.  When adding elements towards the beginning of the linked list this will be significantly less than adding elements to the end of a linked list, which is big O of n.
 
 ### Removing Elements
 
@@ -247,3 +247,5 @@ If you consider the time complexity of removing an element from a linked list, o
 ### Summary
 
 Linked lists help us solve some of the time complexity issues  encountered when manipulating arrays.  Unlike arrays, linked lists do not depend on an element at a given index being at a specific location in memory.  Because of this, when elements are added or removed, the location of every other element need not change.  Instead with a linked list, we only change what the node in question and adjacent nodes point to, leading to less costly data structure for frequently changing data.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/linked-lists-reading'>Linked Lists Reading</a> on Learn.co and start learning to code for free.</p>
